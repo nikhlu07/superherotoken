@@ -20,3 +20,5 @@ Authors
 Nikhil Sharma
 Email: nikhhils07@gmail.com
 GitHub:https://github.com/nikhlu07
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details

@@ -1,4 +1,5 @@
 # SuperHeroToken - Ethereum Token Contract
+This Solidity program is a simple "superherotoken" program that demonstrates the basic syntax and functionality of the Solidity programming language.
 
 # Description:
 SuperHeroToken is an advanced Ethereum ERC-20-compliant token contract that empowers users to unleash the heroic potential of their favorite superheroes on the Ethereum blockchain. This cutting-edge smart contract enables seamless creation, secure transfer, and honorable burning of unique superhero-themed tokens, providing an immersive experience for token holders.

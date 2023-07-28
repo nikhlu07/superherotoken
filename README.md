@@ -30,8 +30,10 @@ Transfer Tokens: Empower Ethereum addresses to transfer superhero tokens securel
 
 Burn Tokens: Pay homage to the valor of your superheroes by performing the honorable act of burning tokens. Tokens can be permanently removed from circulation, leaving a legacy behind.
 
-# Help and Support:
-If you encounter any challenges or have questions about the SuperHeroToken contract, our team of developers and contributors is always here to assist you. Feel free to reach out to us through GitHub or the provided email address.
-
 # Authors:
-This incredible superhero journey was brought to you by Nikhil Sharma, a passionate developer with a vision for innovative blockchain solutions. Connect with the author on GitHub (https://github.com/nikhlu07) or send an email to nikhhils07@gmail.com.
+Nikhil Sharma 
+Connect with the author on GitHub (https://github.com/nikhlu07) 
+or send an email to nikhhils07@gmail.com.
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details

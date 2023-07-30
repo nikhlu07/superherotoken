@@ -16,7 +16,6 @@ contract SuperHeroToken {
     uint256 public nextTokenId = 1;
 
     event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
-    event Approval(address indexed owner, address indexed spender, uint256 indexed tokenId);
     event Mint(address indexed to, uint256 indexed tokenId);
     event Burn(address indexed from, uint256 indexed tokenId);
 
@@ -35,27 +34,6 @@ contract SuperHeroToken {
         return true;
     }
 
-    // function approve(address spender, uint256 tokenId) external returns (bool) {
-    //     require(tokenExists[tokenId], "Token does not exist");
-    //     require(tokenIdToOwner[tokenId] == msg.sender, "You don't own this token");
-
-    //     allowances[msg.sender][spender] = tokenId;
-    //     emit Approval(msg.sender, spender, tokenId);
-    //     return true;
-    // }
-
-    // function transferFrom(address from, address to, uint256 tokenId) external returns (bool) {
-    //     require(to != address(0), "Invalid recipient address");
-    //     require(tokenExists[tokenId], "Token does not exist");
-    //     require(tokenIdToOwner[tokenId] == from, "Token is not owned by sender");
-    //     require(allowances[from][msg.sender] == tokenId, "Not approved to transfer this token");
-
-    //     tokenIdToOwner[tokenId] = to;
-    //     delete allowances[from][msg.sender];
-    //     emit Transfer(from, to, tokenId);
-    //     return true;
-    // }
-
     function mint(address to) external {
         require(nextTokenId <= totalSupply, "Maximum token limit reached");
 
@@ -68,7 +46,8 @@ contract SuperHeroToken {
         emit Mint(to, tokenId);
         emit Transfer(address(0), to, tokenId);
     }
-     function burn(uint256 tokenId) external {
+
+    function burn(uint256 tokenId) external {
         require(tokenExists[tokenId], "Token does not exist");
         require(tokenIdToOwner[tokenId] == msg.sender, "You don't own this token");
         require(balances[msg.sender] >= 1, "Insufficient balance for burning");
@@ -80,5 +59,4 @@ contract SuperHeroToken {
         emit Burn(msg.sender, tokenId);
         emit Transfer(msg.sender, address(0), tokenId);
     }
-
 }

@@ -8,7 +8,6 @@ contract SuperHeroToken {
     uint public totalSupply;
 
     mapping(address => uint256) public balances;
-    mapping(address => mapping(address => uint256)) public allowances;
     mapping(uint256 => address) public tokenIdToOwner;
     mapping(address => uint256[]) public ownedTokens;
     mapping(uint256 => bool) public tokenExists;
